@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #242A32;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+            user-select: none;
+            background-color: #0296E5;
+            color: white;
+            border-radius: 10px;
+            transition: background-color 0.4s ease;
+        }
+
+        button:hover {
+            background-color: rgba(0, 0, 0, 0.100);
+        }
+
+        button:focus {
+            background-color: rgba(0, 0, 0, 0.100);
+        }
+
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="logo.png" alt="App Logo" class="logo">
+        <h1>Movie App</h1>
+        <div class="buttons">
+            <button onclick="downloadApp()">Download 1.0 demo</button>
+            <button onclick="openInWeb()">Open in web</button>
+            <button onclick="showAbout()">About</button>
+        </div>
+    </div>
+
+    <script>
+        var delayInMilliseconds = 400;
+        function downloadApp() {
+
+            setTimeout(function () {
+                window.open("https://ownerofuzb.github.io/movie-app/a/app/movie-app.apk", "_blank");
+
+            }, delayInMilliseconds);
+        }
+
+        function showAbout() {
+            setTimeout(function () {
+                window.open("https://github.com/ownerofuzb/movie-app", "_blank");
+
+            }, delayInMilliseconds);
+        }
+        function openInWeb() {
+            setTimeout(function () {
+                window.open("https://ownerofuzb.github.io/movie-app/", "_blank");
+            }, delayInMilliseconds);
+        }
+    </script>
+</body>
+
+</html>
